@@ -16,4 +16,3 @@ def criar_jogador():
     return classes.Personagem(x,nome,pontos_vida)
 
 jogador = criar_jogador()
-print(jogador)
