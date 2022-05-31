@@ -16,8 +16,7 @@ class Criatura:
             f"O {self.nome} recebeu o dano de {valor_golpe} e sua vida atual é de {self.pontos_vida}")
 
     def __str__(self):
-        print(
-            f"DADOS DA CRIATURA:\n Nome: {self.nome}\n Pontos de Vida: {self.pontos_vida}")
+        return f'DADOS DA CRIATURA:\n Nome: {self.nome}\n Pontos de Vida: {self.pontos_vida}'
 
 
 class Personagem:
