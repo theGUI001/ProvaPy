@@ -9,8 +9,7 @@ class Criatura:
 
     def golpear_criatura(self, valor_golpe):
         self.pontos_vida -= valor_golpe
-        print(
-            f"O {self.nome} recebeu o dano de {valor_golpe} e sua vida atual é de {self.pontos_vida}")
+        print(f"O {self.nome} recebeu o dano de {valor_golpe} e sua vida atual é de {self.pontos_vida}")
 
     def __str__(self):
         return f'DADOS DA CRIATURA:\n Nome: {self.nome}\n Pontos de Vida: {self.pontos_vida}'
@@ -26,6 +25,7 @@ class Personagem:
 
     def golpear_jogador(self, valor_golpe):
         self.pontos_vida -= valor_golpe
-        return f"O {self.nome} recebeu o dano de {valor_golpe} e sua vida atual é de {self.pontos_vida}"
+        print (f"O {self.nome} recebeu o dano de {valor_golpe} e sua vida atual é de {self.pontos_vida}")
+    
     def __str__(self):
         return f"DADOS DO PERSONAGEM:\n Nome: {self.nome}\n Pontos de Vida: {self.pontos_vida}\n Nível: {self.nivel}\n Vocação: {self.vocacao}"
