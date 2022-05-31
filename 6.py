@@ -20,7 +20,7 @@ player = criar_jogador()
 rodada = 0
 print (f'Bem vindo, {player.nome}! a batalha logo irá começar!')
 
-while (rodada != 3):
+while (rodada != 6):
     orc.golpear_criatura(random.choice(player.dano_base))
     player.golpear_jogador(random.choice(orc.dano_base))
     rodada += 1
